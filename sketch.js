@@ -63,7 +63,7 @@ function setup(){
     rotator3 = Bodies.rectangle(250,200,150,20,rotator_options);
     World.add(world,rotator3);
 
-    //styling the bodies here
+
     fill("brown");
     rectMode(CENTER);
     ellipseMode(RADIUS);
