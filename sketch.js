@@ -48,20 +48,11 @@ function setup(){
     World.add(world,particle5);
 
     var rotator_options={
-      // isStatic=true
-      // isStatic true
-      // isStatic:false
+    
        isStatic:true
     };
 
-    // rotator1 = rectangle(250,200,150,20,rotator_options);
-    // World.add(world,rotator1);
 
-    // rotator1 = Bodies.rectangle();
-    // World.add(world,rotator1);
-
-    // rotator1 = Bodies.circle(250,200,150,20,rotator_options);
-    // World.add(world,rotator1);
 
      rotator1 = Bodies.rectangle(250,200,150,20,rotator_options);
      World.add(world,rotator1);
@@ -83,19 +74,18 @@ function draw(){
     background("lightgreen");
     Engine.update(engine);
 
-  //created shape for plane and stand
+
   rect(plane.position.x,plane.position.y,1200,20);
   rect(block1.position.x,block1.position.y,150,20);
   rect(block2.position.x,block2.position.y,150,20);
 
-  //created shape for all the paticles
   ellipse(particle1.position.x,particle1.position.y,10);
   ellipse(particle2.position.x,particle2.position.y,10);
   ellipse(particle3.position.x,particle3.position.y,10);
   ellipse(particle4.position.x,particle4.position.y,10);
   ellipse(particle5.position.x,particle5.position.y,10);
 
-  //created shape for all the rotators
+
   Matter.Body.rotate(rotator1,angle1)
   push();
   translate(rotator1.position.x,rotator1.position.y);
